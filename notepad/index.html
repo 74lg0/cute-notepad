@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Note-Pad</title>
+    <link rel="icon" type="image/jpg" href="./favicon.ico"/>
+    <style>
+        /* Fondo personalizado */
+        body {
+            margin: 0;
+            padding: 0;
+            background: url('minimalist-img.jpg') no-repeat center center fixed;
+            background-size: cover;
+            font-family: Arial, sans-serif;
+            color: #fff;
+        }
+
+        /* Efecto de blur general */
+        .blur-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            backdrop-filter: blur(10px);
+            background-color: rgba(0, 0, 0, 0.5); /* Color semitransparente */
+        }
+
+        /* Apartado de escritura */
+        .text-area {
+            width: 80%;
+            max-width: 800px;
+            height: 60%;
+            padding: 20px;
+            border: none;
+            outline: none;
+            resize: none;
+            font-size: 1.2rem;
+            font-style: italic;
+            background: transparent;
+            color: #fff;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+            border-radius: 10px;
+            backdrop-filter: blur(10px);
+        }
+
+        /* Placeholder estilo minimalista */
+        .text-area::placeholder {
+            color: #ddd;
+            font-style: italic;
+        }
+    </style>
+</head>
+<body>
+    <div class="blur-container">
+        <textarea class="text-area" placeholder="Your Mind. Your notepad."></textarea>
+    </div>
+</body>
+</html>
